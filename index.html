@@ -2,50 +2,108 @@
 <html>
 <body>
 
-<p id="ofensa"></p>
+<p id="offense"></p>
 
 <script>
-
-var parte1 = [
-      "lol shut the fuck up, "
-    , "who the fuck are you again?"
-    , "welcome"
-    , "howdy"
-    , "greetings"
-    , "salut"
-    , "hallo"
-    , "hola"
-    , "Gday"
-    , "Hey"
+var part1 = [
+      "Lol can you PLEASE shut the fuck up??? You are just a "
+    , "Who THE FUCL are you again? Cause I'm pretty sure you are a "
+    , "LMFAO what is this idiot talking about? This guy is basically a "
+    , "Sorry, but who do you think you are? You "
+    , "Sorry if I'm being rude here, but who THE FUCK asked you? This guy is just a "
+    , "Huh, dude...WHAT? No one really cares about this lol. Go get some sunlight, you've had enough internet for today, you "
+    , "What the hell are you talking about? Please study basic maths before talking, ok? You are nothing but a "
+    , "I didnt even read what you just said, cause all I see here is 'blablabla Im a weebo who prefers Xerneas over girls'. Imo you are just a "
 ];
 
 
-var parte2 = [
-      "hello"
-    , "ciao"
-    , "welcome"
-    , "howdy"
-    , "greetings"
-    , "salut"
-    , "hallo"
-    , "hola"
-    , "Gday"
-    , "Hey"
+var part2 = [
+      "retarded VGC addicted faggot. "
+    , "piece of shit. "
+    , "scum of the earth. "
+    , "weirdo addicted to children video games. "
+    , "loser who spends all of his time masturbating and smashing his head on random buttons of his 3DS. "
+    , "random player addicted to clicking Fake Out and Geomancy on a children video game. "
+    , "braindead monkey and an irrelevant Pokémon player. "
+    , "weebo full of acne. "
+    , "cancerous fucker. "
+    , "button smasher mongoloid. "
+    , "dumbass who missed math classes to play a luck based children video game. "
+    , "idiot who doesnt know basics math. "
 ];
 
 
-var rand1 = Math.floor(Math.random() * parte1.length);
-var rand2 = Math.floor(Math.random() * parte2.length);
+
+var part3 = [
+      "oo "
+    , "oO "
+    , ":__: "
+    , ":] "
+    , ":[|] "
+    , ";-; "
+    , "_|_ "
+    , "¯\_(ツ)_/¯ "
+    , "ಠ_ಠ "
+];
 
 
-var ofensa1 = parte1[rand1]
-var ofensa2 = parte2[rand2]
+var part4 = [
+      "Even Nails with his small as fuck brain could beat you in this game. "
+    , "Come back when you win something relevant in this game. "
+    , "You are as predictable in this game as Wolfey leading Scarf Lando + Physical Attacker and switching one of them for Milotic. "
+    , "Even fucking Embc29 can beat you easily in this game by smashing his giant forehead in his 3DS. "
+    , "You are so dumb than not even DaWoblefet's Mechanics Monday can help you become a good player. "
+    , "You are basically as good in this game as Cased Victory is good with girls (hint: his is not good at all LOL). "
+    , "Smogon would have to literally ban every Pokémon in this game except Magikarp for you to be a top player LMAO. "
+    , "Please come back when you can at least win an important tournament, kiddo. "
+    , "You literally played more Pokémon this weekend than me the entire month. Good job dude "
+    , "Why are you wasting your time talking shit about a luck based online children video game? "
+    , "You are about as good in this game as Yuree is a girl irl. "
+    , "Even Paul Chua randomly clicking Fake Out, Water Spout and Geomancy can beat you at this game, dude "
+    , "You are more addicted in this game than Nails, Yuree and René together. Good job, my dude "
+    , "What is better, studying maths and becoming rich or wasting your money traveling the world to play a luck based meaningless children video game? "
+    , "You have more acne than Kingofmars and Chuppa Cross 5 together, thus making your statement is invalid "
+    , "You are the kind of player who loses to italians in online tournaments and complains about ghosting "
+    , "You are just an addicted ladder hero who plays all day but has never won an important tournament "
+    , "The only way someone as bad as you can win at this meaningless children video game is by spamming Rock Slide and praying for flinches "
+    , "What is better, spending your weekend with your gf and family or clicking buttons on children video game events full of acne teenagers? "
+];
 
-var res = ofensa1.concat(ofensa2);
+var part5 = [
+      "oo"
+    , "oO"
+    , ":__:"
+    , ";-;"
+    , "_|_"
+    , "¯\_(ツ)_/¯"
+    , "ಠ_ಠ"
+    , "ლ(ಠ益ಠ)ლ"
+    , "༼ຈل͜ຈ༽"
+    , "( ͡ᵔ ͜ʖ ͡ᵔ )"
+    , "(. ❛ ᴗ ❛.)"
+    , "( ͡° ʖ̯ ͡°)"
+    , "(ง’̀-‘́)ง"
+    , "(凸 ͡° ͜ʖ ͡°)凸"
+];
 
-document.getElementById('ofensa').innerHTML = res;
+var rand1 = Math.floor(Math.random() * part1.length);
+var rand2 = Math.floor(Math.random() * part2.length);
+var rand3 = Math.floor(Math.random() * part3.length);
+var rand4 = Math.floor(Math.random() * part4.length);
+var rand5 = Math.floor(Math.random() * part5.length);
 
+var offense1 = part1[rand1]
+var offense2 = part2[rand2]
+var offense3 = part3[rand3]
+var offense4 = part4[rand4]
+var offense5 = part5[rand5]
 
+var offense_full = offense1.concat(offense2);
+var offense_full = offense_full.concat(offense3);
+var offense_full = offense_full.concat(offense4);
+var offense_full = offense_full.concat(offense5);
+
+document.getElementById('offense').innerHTML = offense_full;
 
 </script>
 
